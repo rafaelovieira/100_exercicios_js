@@ -4,7 +4,7 @@
   const codigoProduto;
 As variáveis produto e codigoProduto devem estar em um escopo global. A variável categoria deve estar dentro de uma função. 
 A execução do programa deve imprimir os detalhes do produto na ordem correta (com quebra de linha): 
-Produto Categoria Código do Produto. */
+Produto Categoria Código do Produto. */ 
 
 var produto = "café"
 const codigoProduto = 123456

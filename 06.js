@@ -3,7 +3,7 @@
     cpf: O CPF da pessoa.
     cidade: A cidade onde a pessoa mora. 
 Declare e inicialize o objeto pessoa com valores para nome, cpf e cidade. 
-Imprima cada uma das propriedades do objeto pessoa usando console.log. */
+Imprima cada uma das propriedades do objeto pessoa usando console.log. */ 
 
 let pessoa = {
     nome: "Rafael",

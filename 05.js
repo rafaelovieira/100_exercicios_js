@@ -4,7 +4,7 @@ Ambas as funções devem receber um parâmetro carreira e retornar uma string co
 Retorno: "Meu objetivo de carreira é me tornar um [parametro carreira]".
 */
 
-// TRADICIONAL
+// TRADICIONAL 
 const carreira = "Desenvolvedor"
 
 function objetivoDeCarreira (objetivo) {

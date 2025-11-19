@@ -8,7 +8,7 @@ Imprima o nome, CPF e cidade do aluno.
 Imprima cada uma das notas do array notas. 
 Calcule a média das notas do aluno e imprima. 
 Selecione uma das notas aleatoriamente, convertê-la de uma escala de 0-10 para uma escala de 0-100 (nota convertida = nota × 10). Utilize a sintaxe notas[Math.floor(Math.random() * notas.length)] para selecionar uma nota aleatória do array. 
-Utilize template literals para a concatenação de strings. */
+Utilize template literals para a concatenação de strings. */ 
 
 let aluno = {
     nome: "Rafael",

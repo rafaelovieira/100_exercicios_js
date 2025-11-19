@@ -4,7 +4,7 @@
     const cpf;
 nome e cpf devem estar em um escopo global. sobreNome deve estar dentro de uma função. 
 A execução do programa deve imprimir o nome completo na ordem correta (com quebra de linha): Nome Sobrenome CPF. 
-Outra linha com uma mensagem concatenando os valores */
+Outra linha com uma mensagem concatenando os valores */ 
 
 var nome = "Rafael"
 const cpf = "123.123.123-12"

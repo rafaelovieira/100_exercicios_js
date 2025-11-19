@@ -4,7 +4,7 @@ Fora da função, defina uma const tecnologia que possua o valor “React”.
 Chame a execução da função para que a mesma retorne: “Meu objetivo é aprender React”. 
 Faça um exemplo com function e outro com arrow function. */
 
-// FUNCTION
+// FUNCTION 
 const framework = "React"
 
 function objetivoDoCurso(tecnologia) {
