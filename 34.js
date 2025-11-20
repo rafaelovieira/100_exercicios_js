@@ -7,6 +7,7 @@ const alunos = [
     {nome: "José", idade: 25, notas: [8.0, 6.0, 6.5]},
 ]
 
-const mediaIdades = alunos.reduce((total, idade) => {return total + idade.idade}, 0) / alunos.length
+const mediaIdades = alunos.reduce((total, idade) => {
+    return total + idade.idade}, 0) / alunos.length
 
 console.log(mediaIdades.toFixed(2))
