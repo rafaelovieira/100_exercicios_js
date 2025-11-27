@@ -8,6 +8,6 @@ const primeiraEUltimaLetraMaiuscula = palavras.map(palavra => {
     const primeira = palavra.slice(0, 1)
     const meio = palavra.slice(1, -1)
     const ultima = palavra.slice(-1)
-    return primeira.toLocaleUpperCase() + meio + ultima.toLocaleUpperCase()})
+    return primeira.toUpperCase() + meio + ultima.toUpperCase()})
 
 console.log(primeiraEUltimaLetraMaiuscula)
