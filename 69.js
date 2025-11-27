@@ -8,6 +8,6 @@ const primeiraUltimaMinuscula = palavras.map(palavra => {
     const primeira = palavra.slice(0, 1).toLowerCase()
     const meio = palavra.slice(1, -1)
     const ultima = palavra.slice(-1).toLowerCase()
-    return primeira + meio + ultima})
-
+    return primeira + meio + ultima
+})
 console.log(primeiraUltimaMinuscula)

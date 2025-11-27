@@ -3,6 +3,7 @@ e retorne um novo array contendo apenas os números que são ímpares e maiores 
 
 const numeros = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
-const imparMaiorQue15 = numeros.filter(numero => numero % 2 != 0 && numero > 15)
-
+const imparMaiorQue15 = numeros.filter(numero => 
+    numero % 2 != 0 && numero > 15
+)
 console.log(imparMaiorQue15)

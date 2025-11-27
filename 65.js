@@ -6,5 +6,4 @@ const palavras = ["irei", "remover", "as", "consoantes"]
 const removendoAsConsoantes = palavras.map(palavra => 
     palavra.replace(/[bcdfghjklmnpqrstvwxyzç]/gi, "")
 )
-
 console.log(removendoAsConsoantes)

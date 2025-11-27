@@ -3,6 +3,7 @@ e retorne um novo array contendo apenas as strings que têm exatamente 6 caracte
 
 const frutas = ["Melancia", "Banana", "Uva", "Laranja"]
 
-const stringComSeisCaracteres = frutas.filter(fruta => fruta.length === 6)
-
+const stringComSeisCaracteres = frutas.filter(fruta => 
+    fruta.length === 6
+)
 console.log(stringComSeisCaracteres)
