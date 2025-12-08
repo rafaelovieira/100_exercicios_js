@@ -1,0 +1,47 @@
+<!-- Crie uma página que verifique se um número é primo. 
+ O usuário deve inserir um número e a página deve exibir se ele é primo ou não.-->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número primo</title>
+ </head>
+ <body>
+    <h1>Verificação de Números Primos</h1>
+    <p>Insira um número para descobrir se ele é primo:</p>
+
+    <input type="number" id="num" placeholder="insira aqui...">
+    <button onclick="verificarNumeroPrimo()">Consultar</button>
+    <br/>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarNumeroPrimo() {
+            const input = document.getElementById('num').value
+
+                if (input === '' || input === null) {
+                    document.getElementById('resultado').innerText = "Insira um número"
+                    return
+                }
+
+            const n = parseInt(input)
+            
+                if (n < 2) {
+                    document.getElementById('resultado').innerText = `${n} não é primo!`
+                    return
+                }
+
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0) {
+                    document.getElementById('resultado').innerText = `${n} não é primo!`
+                    return
+                }
+            }
+            document.getElementById('resultado').innerText = `${n} é primo!`
+        }
+    </script>
+
+ </body>
+ </html>
