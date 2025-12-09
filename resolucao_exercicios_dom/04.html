@@ -1,0 +1,36 @@
+<!-- Crie uma página que calcule a soma dos números de 1 a N, onde N é um valor inserido pelo usuário. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatório de Números</title>
+</head>
+<body>
+
+    <h1>Soma dos números de 1 até um número escolhido</h1>
+    <p>Escolha um número para ser somado</p>
+    <input type="number" id="num" placeholder="insira aqui...">
+    <button onclick="somatorioAteN()">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function somatorioAteN() {
+            const input = document.getElementById('num').value
+                if (input === '' || input === null) {
+                    document.getElementById('resultado').innerText = "Favor insira um número!"
+                    return
+                }
+            
+            const n = parseInt(input)
+            let somatorio = 0
+            
+            for (let i = 1; i <= n; i++) 
+                somatorio += i
+                document.getElementById('resultado').innerText = `O somatório de 1 até ${n} é igual a ${somatorio}`
+        }
+    </script>
+    
+</body>
+</html>

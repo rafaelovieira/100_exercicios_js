@@ -1,0 +1,32 @@
+<!-- Crie uma página que receba uma lista de nomes e exiba o nome mais longo e o mais curto. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Nomes</title>
+</head>
+<body>
+
+    <h1>Lista de nomes</h1>
+    <p>Insira nomes separados por vírgula e mostrarei o mais longo e o mais curto</p>
+    <textarea id="nomes" placeholder="nome1, nome2, nome3, nome4..."></textarea><br>
+    <button onclick="verificarNomes()">Consultar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarNomes() {
+            const input = document.getElementById("nomes").value.split(",").map(n => n.trim())
+            let maior = input[0]
+            let menor = input[0]
+            input.forEach(nome => {
+                if (nome.length > maior.length) maior = nome
+                if (nome.length < menor.length) menor = nome
+            })
+            document.getElementById("resultado").innerText = `Nome mais curto: ${menor}, nome mais longo: ${maior}`
+        }
+    </script>
+    
+</body>
+</html>
